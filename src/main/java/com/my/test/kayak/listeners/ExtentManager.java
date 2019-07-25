@@ -11,6 +11,9 @@ import java.util.Date;
 
 import static org.openqa.selenium.io.FileHandler.delete;
 
+/**
+ * ExtentReports extent instance created here. That instance can be reachable by getInstance() method. 
+ */
 public class ExtentManager {
 
     private static ExtentReports extent;

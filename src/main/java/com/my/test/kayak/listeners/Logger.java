@@ -2,6 +2,10 @@ package com.my.test.kayak.listeners;
 
 import com.aventstack.extentreports.Status;
 
+/* 
+ * Utility for logging important milestones into extent reporting
+ */
+
 public class Logger extends ExtentTestManager{
 
     public static void log(String message){

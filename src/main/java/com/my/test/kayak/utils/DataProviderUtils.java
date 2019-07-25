@@ -14,6 +14,13 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/*
+ * All the test data will be kept in excel sheet (testdata.xlsx). 
+ * By using ‘testdata.xlsx’, we pass test data and handle data driven testing. 
+ * We use Apache POI to handle excel sheets.
+ * 
+ */
+
 public class DataProviderUtils {
 
     private static boolean doFilePathMapping=true;
@@ -25,7 +32,7 @@ public class DataProviderUtils {
         return multipleExecutionDataWithFixedSheet(method,sWorkBooName,sheetNameP,null);
     }
 
-    //@DataProvider
+
     public  Object[][] multipleExecutionDataWithFixedSheet(Method method,String sWorkBooName, String sheetNameP, String testCase){
         String testCaseId;
         if(testCase==null){ testCaseId = method.getName();}

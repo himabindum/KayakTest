@@ -8,6 +8,10 @@ import org.testng.ITestResult;
 
 import java.io.IOException;
 
+/*
+ * Add ExtentReports codes in each listener method and add some informative comments
+ */
+
 public class TestListener implements ITestListener {
 
     public void onStart(ITestContext context) {

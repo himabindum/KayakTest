@@ -17,6 +17,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/*
+ * Utility to take screenshots for failed test cases
+ */
+
 public class ScreenshotUtility extends TestBase {
 
     public static String screenShotLocation() {

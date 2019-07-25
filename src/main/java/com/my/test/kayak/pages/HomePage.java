@@ -1,20 +1,21 @@
 package com.my.test.kayak.pages;
 
-import com.my.test.kayak.listeners.Logger;
-import com.my.test.kayak.testbase.Driver;
-import com.my.test.kayak.testbase.TestBase;
-import com.my.test.kayak.utils.CommonMethods;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import com.my.test.kayak.listeners.Logger;
+import com.my.test.kayak.testbase.TestBase;
+import com.my.test.kayak.utils.CommonMethods;
+
+/* This class containts WebElements and Page methods */
 
 public class HomePage extends TestBase {
 
@@ -26,7 +27,6 @@ public class HomePage extends TestBase {
 
     @FindBy(xpath = "//div[contains(@id,'-destination-airport-display')]")
     private WebElement destination;
-
 
     @FindBy(xpath = "//input[contains(@id,'-destination-airport')]")
     private WebElement destinationInput;
@@ -45,16 +45,18 @@ public class HomePage extends TestBase {
 
     private String suggestedPlace="//ul[@class='flight-smarty']//div[contains(text(),'LABEL,')]";
 
-    private String parentTab;
     private String flightNumber = "//div[contains(@aria-label,'Result number LABEL:')]";
+    
     private String originOutput = "//div[contains(@aria-label,'Result number LABEL:')]/div[@class='resultWrapper']" +
             "/div[@class='resultInner']/div/div[1]//div[@class='mainInfo']/div/ol/li[1]/div/div/" +
             "div[@class='section duration']/div[@class='bottom']/span[1]";
+    
     private String destinationOutput = "//div[contains(@aria-label,'Result number LABEL:')]/div[@class='resultWrapper']" +
             "/div[@class='resultInner']/div/div[1]//div[@class='mainInfo']/div/ol/li[1]/div/div/" +
             "div[@class='section duration']/div[@class='bottom']/span[3]";
 
     private String firstFlight= flightNumber+"/descendant::li[1]//div[contains(@id,'-select-leg-wrappe')]//input";
+    
     private String secondFlight= flightNumber+"/descendant::li[2]//div[contains(@id,'-select-leg-wrappe')]//input";
 
     public HomePage() {
@@ -90,29 +92,24 @@ public class HomePage extends TestBase {
             action.sendKeys(Keys.ESCAPE).build().perform();
         }
         catch (Exception e){
-
+        	Logger.log("Error while sending escape keys ");
         }
     }
 
     public void includeNearbyAirport(String location){
-
         if(location.equalsIgnoreCase("origin")){
             includeNearby.get(0).click();
         }
         else if(location.equalsIgnoreCase("destination")){
             includeNearby.get(1).click();
         }
-
     }
 
     public void enterDetails(Map<String,String> map){
         enterOrigin(map.get("Origin City"));
         enterDestination(map.get("Destination City"));
         startDate(map.get("Departure Date"),map.get("Return Date"));
-
         clickSearch();
-
-
     }
 
     public void clearDefaultOrigin(){
@@ -120,18 +117,17 @@ public class HomePage extends TestBase {
             defaultTo.click();
         }
         catch (Exception e){
-
+        	Logger.log("Error while clicking the default origin input element ");
         }
         try {
-                    origin.sendKeys(Keys.DELETE);
+            origin.sendKeys(Keys.DELETE);
         }
         catch (Exception e){
-
+        	Logger.log("Error while deleting the default origin input element ");
         }
 
     }
     public String getOrigin(String flightNumber){
-
         try{
             changeTab();
         }
@@ -163,19 +159,17 @@ public class HomePage extends TestBase {
             action.sendKeys(Keys.ESCAPE).build().perform();
         }
         catch (Exception e){
-
+        	Logger.log("Error while changing tabs to close the modal window ");
         }
     }
 
     public void selectFLight(String flightNum){
-
         String flight=firstFlight.replace("LABEL",flightNum);
         CommonMethods.pollAndWait(driver,flight,1,4);
         CommonMethods.click(driver.findElement(By.xpath(flight)));
-      String  flight2=secondFlight.replace("LABEL",flightNum);
+        String  flight2=secondFlight.replace("LABEL",flightNum);
         CommonMethods.click(driver.findElement(By.xpath(flight2)));
         Logger.log("Flight "+flightNum+ "is Selected");
-
     }
 
     public void startDate(String sDate, String eDate){
