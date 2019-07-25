@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="travel" duration-ms="266292" started-at="2019-07-25T02:35:25Z" finished-at="2019-07-25T02:39:52Z">
+    <groups>
+    </groups>
+    <test name="HomePageTestCases" duration-ms="266292" started-at="2019-07-25T02:35:25Z" finished-at="2019-07-25T02:39:52Z">
+      <class name="HomePageTests">
+        <test-method status="PASS" signature="preConfig()[pri:0, instance:HomePageTests@28d25987]" name="preConfig" is-config="true" duration-ms="8784" started-at="2019-07-24T19:35:26Z" finished-at="2019-07-24T19:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConfig -->
+        <test-method status="PASS" signature="TC_001(java.util.Map)[pri:0, instance:HomePageTests@28d25987]" name="TC_001" duration-ms="43669" started-at="2019-07-24T19:35:35Z" description="Search flight for a city" data-provider="multipleExecutionData" finished-at="2019-07-24T19:36:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Destination Code=BOS, TestId=TC_001, Destination City=Boston, Departure Date=23/08/2019, Return Date=30/08/2019, Origin City=Charlotte, Search Result Number=7, testCaseId=TC_001, Origin Code=CLT}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001 -->
+        <test-method status="PASS" signature="postConfig()[pri:0, instance:HomePageTests@28d25987]" name="postConfig" is-config="true" duration-ms="3727" started-at="2019-07-24T19:36:18Z" finished-at="2019-07-24T19:36:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConfig -->
+        <test-method status="PASS" signature="preConfig()[pri:0, instance:HomePageTests@28d25987]" name="preConfig" is-config="true" duration-ms="5968" started-at="2019-07-24T19:36:22Z" finished-at="2019-07-24T19:36:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConfig -->
+        <test-method status="PASS" signature="TC_001(java.util.Map)[pri:0, instance:HomePageTests@28d25987]" name="TC_001" duration-ms="43191" started-at="2019-07-24T19:36:28Z" description="Search flight for a city" data-provider="multipleExecutionData" finished-at="2019-07-24T19:37:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Destination Code=RDU, TestId=TC_001, Destination City=Raleigh, Departure Date=08/08/2019, Return Date=12/08/2019, Origin City=Charlotte, Search Result Number=5, testCaseId=TC_001, Origin Code=CLT}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001 -->
+        <test-method status="PASS" signature="postConfig()[pri:0, instance:HomePageTests@28d25987]" name="postConfig" is-config="true" duration-ms="3572" started-at="2019-07-24T19:37:11Z" finished-at="2019-07-24T19:37:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConfig -->
+        <test-method status="PASS" signature="preConfig()[pri:0, instance:HomePageTests@28d25987]" name="preConfig" is-config="true" duration-ms="5935" started-at="2019-07-24T19:37:15Z" finished-at="2019-07-24T19:37:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConfig -->
+        <test-method status="PASS" signature="TC_001(java.util.Map)[pri:0, instance:HomePageTests@28d25987]" name="TC_001" duration-ms="43448" started-at="2019-07-24T19:37:21Z" description="Search flight for a city" data-provider="multipleExecutionData" finished-at="2019-07-24T19:38:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Destination Code=PHL, TestId=TC_001, Destination City=Philadelphia, Departure Date=31/07/2019, Return Date=04/08/2019, Origin City=Chicago, Search Result Number=4, testCaseId=TC_001, Origin Code=MDW}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001 -->
+        <test-method status="PASS" signature="postConfig()[pri:0, instance:HomePageTests@28d25987]" name="postConfig" is-config="true" duration-ms="3043" started-at="2019-07-24T19:38:04Z" finished-at="2019-07-24T19:38:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConfig -->
+        <test-method status="PASS" signature="preConfig()[pri:0, instance:HomePageTests@28d25987]" name="preConfig" is-config="true" duration-ms="7653" started-at="2019-07-24T19:38:07Z" finished-at="2019-07-24T19:38:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConfig -->
+        <test-method status="PASS" signature="TC_001(java.util.Map)[pri:0, instance:HomePageTests@28d25987]" name="TC_001" duration-ms="42219" started-at="2019-07-24T19:38:15Z" description="Search flight for a city" data-provider="multipleExecutionData" finished-at="2019-07-24T19:38:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Destination Code=MCO, TestId=TC_001, Destination City=Orlando, Departure Date=01/09/2019, Return Date=04/09/2019, Origin City=Columbus, Search Result Number=3, testCaseId=TC_001, Origin Code=CMH}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001 -->
+        <test-method status="PASS" signature="postConfig()[pri:0, instance:HomePageTests@28d25987]" name="postConfig" is-config="true" duration-ms="3349" started-at="2019-07-24T19:38:57Z" finished-at="2019-07-24T19:39:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConfig -->
+        <test-method status="PASS" signature="preConfig()[pri:0, instance:HomePageTests@28d25987]" name="preConfig" is-config="true" duration-ms="6012" started-at="2019-07-24T19:39:01Z" finished-at="2019-07-24T19:39:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConfig -->
+        <test-method status="PASS" signature="TC_001(java.util.Map)[pri:0, instance:HomePageTests@28d25987]" name="TC_001" duration-ms="41487" started-at="2019-07-24T19:39:07Z" description="Search flight for a city" data-provider="multipleExecutionData" finished-at="2019-07-24T19:39:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Destination Code=CLT, TestId=TC_001, Destination City=Charlotte, Departure Date=08/09/2019, Return Date=10/09/2019, Origin City=Atlanta, Search Result Number=4, testCaseId=TC_001, Origin Code=ATL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001 -->
+        <test-method status="PASS" signature="postConfig()[pri:0, instance:HomePageTests@28d25987]" name="postConfig" is-config="true" duration-ms="3652" started-at="2019-07-24T19:39:48Z" finished-at="2019-07-24T19:39:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConfig -->
+      </class> <!-- HomePageTests -->
+    </test> <!-- HomePageTestCases -->
+  </suite> <!-- travel -->
+</testng-results>

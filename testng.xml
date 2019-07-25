@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite  parallel="none" verbose="1" name="travel" thread-count="2" >
+
+    <listeners>
+        <listener class-name="com.my.test.kayak.listeners.TestListener"></listener>
+    </listeners>
+
+    <test name="HomePageTestCases" enabled="true">
+        <parameter name="workBookName" value="testdata.xlsx"/>
+        <parameter name="sheetName" value="Homepage"/>
+        <classes>
+            <class name="HomePageTests"/>
+        </classes>
+    </test>
+
+
+</suite>

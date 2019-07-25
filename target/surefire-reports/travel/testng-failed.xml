@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [travel]">
+  <listeners>
+    <listener class-name="com.my.test.kayak.listeners.TestListener"/>
+  </listeners>
+  <test name="HomePageTestCases(failed)">
+    <parameter name="sheetName" value="Homepage"/>
+    <parameter name="workBookName" value="testdata.xlsx"/>
+    <classes>
+      <class name="HomePageTests">
+        <methods>
+          <include name="postConfig"/>
+          <include name="TC_001"/>
+          <include name="preConfig"/>
+        </methods>
+      </class> <!-- HomePageTests -->
+    </classes>
+  </test> <!-- HomePageTestCases(failed) -->
+</suite> <!-- Failed suite [travel] -->
