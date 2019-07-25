@@ -16,3 +16,7 @@
     - git clone https://github.com/himabindum/KayakTest.git
     - cd KayakTest
     - mvn clean test
+## Results of run
+    - Output_ExtentReport has the detailed Test Automation Report for every run
+    
+    
