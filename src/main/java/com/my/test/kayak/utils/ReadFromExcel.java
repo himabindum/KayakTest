@@ -173,6 +173,7 @@ public class ReadFromExcel {
 
         int rowCount = 0;
         rowCount = sheet.getPhysicalNumberOfRows();
+        System.out.println("Row Count "+rowCount);
         for (int i = 1; i < rowCount; i++) {
             String cValue = sheet.getRow(i).getCell(0).getStringCellValue();
             //System.out.println("Test Case: "+cValue);//for debugging
